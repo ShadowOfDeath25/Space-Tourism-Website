@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-image: url("./assets/crew/background-crew-mobile.jpg") !important;
+    background-size: 100% 100%;
+}
+
+.body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+
+}
+
+.top-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 64px;
+}
+
+.num {
+    margin-right: 24px;
+    font-family: "Barlow Condensed", "Arial", "sans-serif";
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 40%);
+    letter-spacing: calc(16px * 0.15);
+}
+
+.meet {
+    color: white;
+    font-family: "Barlow Condensed", "Arial", "sans-serif";
+    font-size: 16px;
+    letter-spacing: calc(16px * 0.15);
+}
+
+.crew-heading {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.crew-role {
+    color: rgba(255, 255, 255, 40%);
+    font-family: "Bellefair", "sans-serif";
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.crew-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.crew-name {
+    color: white;
+    font-family: "Bellefair", "sans-serif";
+    font-size: 24px;
+}
+
+.crew-desc {
+    color: var(--blue-300);
+    font-family: "Barlow Condensed", "Arial", "sans-serif";
+    line-height: 180%;
+    text-align: center;
+    font-size: 15px;
+    width: 90%;
+    height: 150px;
+    margin-bottom: 24px;
+}
+
+.dot-switch {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    align-self: center;
+}
+
+.dot-option {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    opacity: .4;
+    border-radius: 50%;
+
+
+}
+
+.dot-option.active {
+    opacity: 1;
+}
+
+.hero-img {
+    height: 340px;
+    width: 271.27px;
+    mask-image: linear-gradient(to bottom, black 80%, transparent);
+}
+
+@media (min-width: 768px) {
+    .container {
+        background-image: url("./assets/crew/background-crew-mobile.jpg") !important;
+
+    }
+
+    .heading {
+        text-align: left;
+        justify-content: flex-start;
+    }
+
+    .num {
+        font-size: 20px;
+        letter-spacing: calc(20px * .15);
+    }
+
+    .meet {
+        font-size: 20px;
+        letter-spacing: calc(20px * .15);
+    }
+
+    .hero {
+        padding: 40px;
+    }
+
+    .crew-role {
+        font-size: 24px;
+        letter-spacing: 0;
+        margin-bottom: 16px;
+    }
+
+    .crew-name {
+        font-size: 40px;
+    }
+
+    .crew-desc {
+        font-size: 16px;
+        line-height: 180%;
+        max-height: 115px;
+
+    }
+
+    .dot-switch {
+        max-width: 100px;
+        margin-bottom: 24px;
+    }
+
+    .crew-details {
+        width: 80%;
+        align-self: center;
+    }
+
+    .hero-img {
+        width: 446.8px;
+        height: 560px;
+    }
+
+}
+
+@media (min-width: 1440px) {
+    .container {
+        background-image: url("./assets/crew/background-crew-mobile.jpg") !important;
+    }
+
+    .body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero {
+        width: 80%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .top-side{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 100%;
+    }
+    .dot-switch{
+        align-self:flex-start;
+    }
+    .heading{
+        justify-self: flex-start;
+    }
+    .crew-heading{
+        text-align: left;
+    }
+    .crew-details{
+        align-self: flex-start;
+
+    }
+    .meet{
+        font-size: 28px;
+        letter-spacing: 4px;
+    }
+    .num{
+        font-size:28px;
+        letter-spacing: 4px;
+    }
+    .crew-role{
+        font-size: 32px;
+    }
+    .crew-name{
+        font-size: 56px;
+    }
+    .crew-desc{
+        text-align: left;
+        align-self: flex-start;
+        font-size: 18px;
+        max-height: 96px;
+    }
+    .hero-img{
+        height: 734px;
+        width: 539px;
+    }
+
+}
